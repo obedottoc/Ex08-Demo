@@ -11,7 +11,7 @@ public class SecondThread extends Thread {
 			{
 				synchronized(MainThread.RandomValue)
 				{
-					if(MainThread.RandomValue<100)
+					if(MainThread.RandomValue<100&&MainThread.RandomValue!=-1)
 					{
 						System.out.println("Value is less than hundred");
 						System.out.println("Answer="+(MainThread.RandomValue-10));
@@ -19,7 +19,7 @@ public class SecondThread extends Thread {
 					}
 				}
 			
-				Thread.sleep(100);
+				Thread.sleep(2000);
 			}
 		}catch(InterruptedException ex)
 		{
