@@ -1,4 +1,4 @@
 Write a java program that implements a multi-threaded application that has three threads. First
-thread generates a random integer every 10 second and if the value is greater than 100, second thread
+thread generates a random integer every 4 second and if the value is greater than 100, second thread
 add 10 to that number and prints. If the value is less than hundred , the third thread subtract 10 
 from that number and print the answer.
